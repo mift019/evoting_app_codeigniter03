@@ -16,8 +16,8 @@
                         <form action="<?php echo $action; ?>" method="post">
                             <div class="box-body">
                                 <div class="form-group">
-                                    <label for="varchar">NIS <?php echo form_error('nis') ?></label>
-                                    <input type="text" class="form-control" name="nis" id="nis" placeholder="NIS" value="<?php echo $nis; ?>" />
+                                    <label for="varchar">NPM <?php echo form_error('nis') ?></label>
+                                    <input type="text" class="form-control" name="nis" id="nis" placeholder="NPM" value="<?php echo $nis; ?>" />
                                 </div>
                                 <div class="form-group">
                                     <label for="varchar">Username <?php echo form_error('username') ?></label>
@@ -31,13 +31,13 @@
                                     <label for="varchar">Nama Lengkap<?php echo form_error('nama') ?></label>
                                     <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama Lengkap" value="<?php echo $nama; ?>" />
                                 </div>
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label for="varchar">Kelas<?php echo form_error('kelas') ?></label>
                                     <?php
                                     $dd_kelas_attribute = 'class="form-control select2 js-example-basic-single" id="kelas"';
                                     echo form_dropdown('kelas', $dd_kelas, $kelas_selected, $dd_kelas_attribute);
                                     ?>
-                                </div>
+                                </div> -->
                                 <div class="form-group">
                                     <label for="varchar">Jenis Kelamin <?php echo form_error('jk') ?></label>
                                     <div class="form-group">

@@ -75,8 +75,8 @@ class Data_pemilih extends CI_Controller
                 'username' => $row->username,
                 'password' => $row->password,
                 'nama' => $row->nama,
-                'kelas' => $getKelas->kelas,
-                'idkelas' => $row->idkelas,
+                // 'kelas' => $getKelas->kelas,
+                // 'idkelas' => $row->idkelas,
                 'jk' => $row->jk,
                 'status' => $row->status,
                 'aktif' => $row->aktif,
@@ -110,8 +110,8 @@ class Data_pemilih extends CI_Controller
             'username' => set_value('username'),
             'password' => set_value('password'),
             'nama' => set_value('nama'),
-            'kelas' => set_value('kelas'),
-            'idkelas' => set_value('idkelas'),
+            // 'kelas' => set_value('kelas'),
+            // 'idkelas' => set_value('idkelas'),
             'jk' => set_value('jk'),
             'status' => set_value('status'),
             'aktif' => set_value('aktif'),
@@ -153,8 +153,8 @@ class Data_pemilih extends CI_Controller
                 'username' => $username,
                 'password' => $password,
                 'nama' => $this->input->post('nama', TRUE),
-                'kelas' => $getKelas->kelas,
-                'idkelas' => $this->input->post('kelas', TRUE),
+                // 'kelas' => $getKelas->kelas,
+                // 'idkelas' => $this->input->post('kelas', TRUE),
                 'jk' => $this->input->post('jk', TRUE),
                 'status' => 'Belum Memilih',
                 'aktif' => '1',
@@ -194,8 +194,8 @@ class Data_pemilih extends CI_Controller
                 'username' => set_value('username', $row->username),
                 'password' => set_value('password', $row->password),
                 'nama' => set_value('nama', $row->nama),
-                'kelas' => set_value('kelas', $row->kelas),
-                'idkelas' => set_value('idkelas', $row->idkelas),
+                // 'kelas' => set_value('kelas', $row->kelas),
+                // 'idkelas' => set_value('idkelas', $row->idkelas),
                 'jk' => set_value('jk', $row->jk),
                 'status' => set_value('status', $row->status),
                 'aktif' => set_value('aktif', $row->aktif),
@@ -348,7 +348,9 @@ class Data_pemilih extends CI_Controller
 
 
                 $createArray = array('nis', 'username', 'password', 'nama', 'kelas', 'jk');
-                $makeArray = array('nis' => 'nis', 'username' => 'username', 'password' => 'password', 'nama' => 'nama', 'kelas' => 'kelas', 'jk' => 'jk');
+                $makeArray = array('nis' => 'nis', 'username' => 'username', 'password' => 'password', 'nama' => 'nama', 
+                // 'kelas' => 'kelas', 
+                'jk' => 'jk');
                 $SheetDataKey = array();
                 foreach ($sheetData as $dataInSheet) {
                     foreach ($dataInSheet as $key => $value) {
@@ -370,29 +372,29 @@ class Data_pemilih extends CI_Controller
                         $userName = $SheetDataKey['username'];
                         $password = $SheetDataKey['password'];
                         $nama = $SheetDataKey['nama'];
-                        $kelas = $SheetDataKey['kelas'];
+                        // $kelas = $SheetDataKey['kelas'];
                         $jk = $SheetDataKey['jk'];
 
                         $nis = filter_var(trim($sheetData[$i][$nis]), FILTER_SANITIZE_STRING);
                         $userName = filter_var(trim($sheetData[$i][$userName]), FILTER_SANITIZE_STRING);
                         $password = filter_var(trim($sheetData[$i][$password]), FILTER_SANITIZE_STRING);
                         $nama = filter_var(trim($sheetData[$i][$nama]), FILTER_SANITIZE_STRING);
-                        $kelas = filter_var(trim($sheetData[$i][$kelas]), FILTER_SANITIZE_STRING);
+                        // $kelas = filter_var(trim($sheetData[$i][$kelas]), FILTER_SANITIZE_STRING);
                         $jk = filter_var(trim($sheetData[$i][$jk]), FILTER_SANITIZE_STRING);
 
                         // Get idkelas
-                        $idKelas = $this->Data_pemilih_model->get_idKelas($kelas);
-                        if ($idKelas == false) {
-                            $idKelas = '';
-                        } else {
-                            $idKelas = $idKelas->idkelas;
-                        }
+                        // $idKelas = $this->Data_pemilih_model->get_idKelas($kelas);
+                        // if ($idKelas == false) {
+                        //     $idKelas = '';
+                        // } else {
+                        //     $idKelas = $idKelas->idkelas;
+                        // }
                         $fetchData[] = array(
                             'nis' => $nis,
                             'username' => $userName,
                             'password' => $password,
                             'nama' => $nama,
-                            'kelas' => $kelas,
+                            // 'kelas' => $kelas,
                             'jk' => $jk,
                             'status' => 'Belum Memilih',
                             'aktif' => '1',
@@ -456,7 +458,7 @@ class Data_pemilih extends CI_Controller
             ->setCellValue('C1', 'Username')
             ->setCellValue('D1', 'Password')
             ->setCellValue('E1', 'Nama')
-            ->setCellValue('F1', 'Kelas')
+            // ->setCellValue('F1', 'Kelas')
             ->setCellValue('G1', 'L/P');
 
         // Miscellaneous glyphs, UTF-8
@@ -469,7 +471,7 @@ class Data_pemilih extends CI_Controller
                 ->setCellValue('C' . $i, $dataPemilih->username)
                 ->setCellValue('D' . $i, $dataPemilih->password)
                 ->setCellValue('E' . $i, $dataPemilih->nama)
-                ->setCellValue('F' . $i, $dataPemilih->kelas)
+                // ->setCellValue('F' . $i, $dataPemilih->kelas)
                 ->setCellValue('G' . $i, $dataPemilih->jk);
             $i++;
             $nourut++;
@@ -585,8 +587,8 @@ class Data_pemilih extends CI_Controller
                 'username' => $this->input->post('username', TRUE),
                 'password' => $this->input->post('password', TRUE),
                 'nama' => $this->input->post('nama', TRUE),
-                'kelas' => $getKelas->kelas,
-                'idkelas' => $this->input->post('kelas'),
+                // 'kelas' => $getKelas->kelas,
+                // 'idkelas' => $this->input->post('kelas'),
                 'jk' => $this->input->post('jk', TRUE),
             );
 

@@ -56,10 +56,10 @@
                                     <thead>
                                         <tr>
                                             <th class="text-center">No</th>
-                                            <th class="text-center">NIS</th>
+                                            <th class="text-center">NPM</th>
                                             <th class="text-center">Username</th>
                                             <th class="text-center">Nama</th>
-                                            <th class="text-center">Kelas</th>
+                                            <!-- <th class="text-center">Tables</th> -->
                                             <th class="text-center">L/P</th>
                                             <th class="text-center">Status</th>
                                             <th class="text-center">Aktif</th>
@@ -73,7 +73,7 @@
                                                 <td><?php echo htmlspecialchars($data_pemilih->nis, ENT_QUOTES, 'UTF-8'); ?></td>
                                                 <td><?php echo htmlspecialchars($data_pemilih->username, ENT_QUOTES, 'UTF-8'); ?></td>
                                                 <td><?php echo htmlspecialchars($data_pemilih->nama, ENT_QUOTES, 'UTF-8'); ?></td>
-                                                <td><?php echo htmlspecialchars($data_pemilih->kelas, ENT_QUOTES, 'UTF-8'); ?></td>
+                                                <!-- <td><?php echo htmlspecialchars($data_pemilih->kelas, ENT_QUOTES, 'UTF-8'); ?></td> -->
                                                 <td width="10px" class="text-center"><?php echo htmlspecialchars($data_pemilih->jk, ENT_QUOTES, 'UTF-8'); ?></td>
                                                 <td class="text-center"><?php echo ($data_pemilih->status === 'Belum Memilih') ? anchor("admin/pemilih", 'Belum Memilih', 'class="label label-danger"') : anchor("admin/data_pemilih/reset_status/" . $data_pemilih->id, 'Sudah Memilih', 'class="label label-success"'); ?></td>
                                                 <td class="text-center"><?php echo ($data_pemilih->aktif) ? anchor("admin/data_pemilih/deactivate/" . $data_pemilih->id, 'Active', 'class="label label-info"') : anchor("admin/data_pemilih/activate/" . $data_pemilih->id, 'Inactive', 'class="label label-danger"'); ?></td>
