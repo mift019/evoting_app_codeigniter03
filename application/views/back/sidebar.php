@@ -4,9 +4,9 @@
     <!-- Sidebar user panel -->
     <div class="user-panel">
       <div class="pull-left image">
-        <img src="<?php echo base_url('assets/template/backend/') ?>dist/img/avatar5.png" class="img-circle" alt="User Image">
+        <img src="<?php echo base_url('assets/template/backend/') ?>dist/img/man.png" class="img-circle" alt="User Image">
       </div>
-      <div class="pull-left info">
+      <div class="pull-left info" style="font-weight: bold; font-family: 'Crimson Text', serif; font-size: 15px;">
         <p><?php echo $this->session->userdata('userName') ?></p>
         <a href="#"><?php echo $this->session->userdata('identity'); ?></a>
       </div>
