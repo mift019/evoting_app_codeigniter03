@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: #232531 !important;">
     <div class="container">
-        <a class="navbar-brand" style="font-weight: bold; font-family: 'Alegreya', serif; font-size: 33px;" href="<?php echo base_url('home') ?>">Evoting Himatemia Unila</a>
+        <a class="navbar-brand" style="font-weight: bold; font-family: 'Alegreya', serif; font-size: 25px;" href="<?php echo base_url('home') ?>">E-Voting Himatemia Unila</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
