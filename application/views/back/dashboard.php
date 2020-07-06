@@ -7,8 +7,8 @@
   <div id="siteBreadcrumb" class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1>
-        DASHBOARD
+      <h1 style="font-weight: bold; font-family: 'Alegreya', serif; ">
+        DASHBOARD PANEL
       </h1>
       <ol class="breadcrumb">
       </ol>
@@ -17,7 +17,7 @@
     <!-- Main content -->
     <section class="content">
       <!-- Small boxes (Stat box) -->
-      <div class="row">
+      <div class="row" style="font-weight: bold; font-family: 'Alegreya', serif; font-size: 25px;">
         <!-- <div class="col-lg-3 col-xs-6"> -->
           <!-- small box -->
           <!-- <div class="small-box bg-aqua">
@@ -35,7 +35,7 @@
         <!-- ./col -->
         <div class="col-lg-6 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-green">
+          <div class="small-box bg-olive">
             <div class="inner">
               <h3><?php echo $jumlahDataPemilih ?></h3>
 
@@ -50,7 +50,7 @@
         <!-- ./col -->
         <div class="col-lg-6 col-xs-6">
           <!-- small box -->
-          <div class="small-box bg-yellow">
+          <div class="small-box bg-orange">
             <div class="inner">
               <h3><?php echo $jumlahKandidat ?></h3>
 
@@ -87,11 +87,11 @@
         <div class="col-md-12">
           <div class="box box-info">
             <div class="box-header with-border">
-              <h3 class="box-title">Data Suara Masuk</h3>
+              <h3 class="box-title" style="font-weight: bold; font-family: 'Alegreya', serif; font-size: 25px;">Data Suara Masuk</h3>
             </div>
             <div class="box-body ">
               <div class="chart">
-                <canvas id="myChart" style="height:300px"></canvas>
+                <canvas id="myChart" style="height:500px"></canvas>
               </div>
             </div>
           </div>
@@ -132,10 +132,10 @@ foreach ($kandidatData as $data) {
         label: 'Suara',
         data: <?php echo json_encode($suara); ?>,
         backgroundColor: [
-          'rgba(221, 72, 57, 0.5)',
-          'rgba(0, 192, 239, 0.5)',
-          'rgba(243, 156, 18, 0.5)',
-          'rgba(0, 166, 90, 0.5)',
+          'rgba(221, 72, 57, 0.9)',
+          'rgba(0, 192, 239, 0.9)',
+          'rgba(243, 156, 18, 0.9)',
+          'rgba(0, 166, 90, 0.9)',
         ],
         borderColor: [
           'rgba(221, 72, 57, 0.5)',
