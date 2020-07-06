@@ -12,8 +12,8 @@
       </div>
     </div>
     <!-- sidebar menu: : style can be found in sidebar.less -->
-    <ul class="sidebar-menu" data-widget="tree">
-      <li class="header">Main Menu</li>
+    <ul class="sidebar-menu" data-widget="tree" style="font-weight: bold; font-family: 'Alegreya', serif; font-size: 15px;">
+      <li class="header" >Main Menu Navigation</li>
       <li>
         <a href="<?php echo base_url('admin') ?>">
           <i class="fa fa-dashboard"></i> <span>Dashboard</span>

@@ -35,10 +35,10 @@
                                         <td><strong>Nama Lengkap</strong></td>
                                         <td><?php print_r($nama); ?></td>
                                     </tr>
-                                    <tr>
+                                    <!-- <tr>
                                         <td><strong>Kelas</strong></td>
                                         <td><?php print_r($kelas); ?></td>
-                                    </tr>
+                                    </tr> -->
                                     <tr>
                                         <td><strong>L/P</strong></td>
                                         <td><?php echo $jk; ?></td>

@@ -677,10 +677,10 @@ class Data_pemilih extends CI_Controller
             'setting_data' => $setting_data
         );
 
-        $this->load->library('pdf');
+        // $this->load->library('pdf');
 
-        $this->pdf->setPaper('A4', 'potrait');
-        $this->pdf->filename = "data_pemilih.pdf";
+        // $this->pdf->setPaper('A4', 'potrait');
+        // $this->pdf->filename = "data_pemilih.pdf";
         // $this->pdf->load_view('back/data_pemilih/data_pemilih_cetak', $data);
         // $this->pdf->load_view('back/laporan/daftar_hadir', $data);
         $this->load->view('back/data_pemilih/data_pemilih_cetak', $data);

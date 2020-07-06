@@ -1,10 +1,10 @@
-<header class="main-header">
+<header class="main-header" style="font-weight: bold; font-family: 'Alegreya', serif;">
     <!-- Logo -->
     <a href="<?php echo base_url('admin/dashboard') ?>" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><b>S</b>21</span>
+        <span class="logo-mini"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>Panel</b> Admin</span>
+        <span class="logo-lg" style="font-weight: bold; font-family: 'Alegreya', serif;"><b>ADMINISTRATOR</b></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
