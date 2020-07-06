@@ -1,6 +1,3 @@
 # Auto detect text files and perform LF normalization
 *.* linguist-language=PHP
-* text=auto
-*.css linguist-vendored
-*.scss linguist-vendored
-*.js linguist-vendored
+
