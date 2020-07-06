@@ -26,11 +26,11 @@
         </a>
       </li>
       <!-- ./Filemanager -->
-      <li>
+      <!-- <li>
         <a href="<?php echo base_url('admin/kelas') ?>">
           <i class="glyphicon glyphicon-blackboard"></i> <span>Kelas</span>
         </a>
-      </li>
+      </li> -->
       <!-- ./Kelas -->
       <li>
         <a href="<?php echo base_url('admin/pemilih') ?>">
