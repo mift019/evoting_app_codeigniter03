@@ -49,7 +49,7 @@ class Dashboard extends CI_Controller
         $this->session->set_userdata($username);
 
         // Jumlah Kelas
-        $jumlahKelas = $this->Dashboard_model->total_rows('kelas');
+        // $jumlahKelas = $this->Dashboard_model->total_rows('kelas');
         // Jumlah Data Pemilih
         $jumlahDataPemilih = $this->Dashboard_model->total_rows('data_Pemilih');
         // Jumlah Kandidat
@@ -87,7 +87,7 @@ class Dashboard extends CI_Controller
         }
 
         $data = array(
-            'jumlahKelas' => $jumlahKelas,
+            // 'jumlahKelas' => $jumlahKelas,
             'jumlahDataPemilih' => $jumlahDataPemilih,
             'jumlahKandidat' => $jumlahKandidat,
             'jumlahSuaraMasuk' => $jumlahSuaraMasuk,

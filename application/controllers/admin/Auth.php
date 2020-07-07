@@ -302,7 +302,7 @@ class Auth extends CI_Controller
 				redirect("admin/auth/login", 'refresh'); //we should display a confirmation page here instead of the login page
 			} else {
 				$this->session->set_flashdata('message', $this->ion_auth->errors());
-				redirect("admin/auth/forgot_password", 'refresh');
+				// redirect("admin/auth/forgot_password", 'refresh');
 			}
 		}
 	}

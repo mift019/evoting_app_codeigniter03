@@ -38,8 +38,8 @@ class Data_pemilih_model extends CI_Model
         $this->db->or_like('username', $q);
         $this->db->or_like('password', $q);
         $this->db->or_like('nama', $q);
-        $this->db->or_like('kelas', $q);
-        $this->db->or_like('idkelas', $q);
+        // $this->db->or_like('kelas', $q);
+        // $this->db->or_like('idkelas', $q);
         $this->db->or_like('jk', $q);
         $this->db->or_like('status', $q);
         $this->db->or_like('aktif', $q);
@@ -56,8 +56,8 @@ class Data_pemilih_model extends CI_Model
         $this->db->or_like('username', $q);
         $this->db->or_like('password', $q);
         $this->db->or_like('nama', $q);
-        $this->db->or_like('kelas', $q);
-        $this->db->or_like('idkelas', $q);
+        // $this->db->or_like('kelas', $q);
+        // $this->db->or_like('idkelas', $q);
         $this->db->or_like('jk', $q);
         $this->db->or_like('status', $q);
         $this->db->or_like('aktif', $q);
