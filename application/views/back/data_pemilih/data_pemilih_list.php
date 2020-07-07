@@ -7,9 +7,8 @@
     <div id="siteBreadcrumb" class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-            <h1>
-                Data Pemilih
-                <small>List</small>
+            <h1 style="font-weight: bold; font-family: 'Alegreya', serif; font-size: 25px;">
+                Daftar Data Pemilih Himatemia
             </h1>
             <ol class="breadcrumb">
             </ol>
@@ -28,8 +27,8 @@
                             <div class="box-body">
                                 <div id="infoMessage"><?php echo $this->session->userdata('message') <> '' ? $this->session->userdata('message') : ''; ?></div>
                                 <div class="row">
-                                    <div class="col-sm-6">
-                                        <a href="<?php echo base_url('admin/data_pemilih/create') ?>" class="btn btn-md bg-blue btn-flat"><i class="fa fa-plus"> Create</i></a>
+                                    <div class="col-sm-6" >
+                                        <a style="font-weight: bold; font-family: 'Alegreya', serif;" href="<?php echo base_url('admin/data_pemilih/create') ?>" class="btn btn-md bg-blue btn-flat"><i class="fa fa-plus"> Create</i></a>
                                         <a href="<?php echo base_url('admin/data_pemilih/import') ?>" class="btn btn-md bg-green btn-flat"><i class="fa fa-file-excel-o"> Import</i></a>
                                         <a href="<?php echo base_url('admin/data_pemilih/exportData') ?>" class="btn btn-md bg-yellow btn-flat"><i class="fa fa-download"> Export</i></a>
                                         <a href="<?php echo base_url('admin/data_pemilih/cetak') ?>" target="_blank" class="btn btn-md bg-purple btn-flat"><i class="fa fa-print"> Cetak</i></a>

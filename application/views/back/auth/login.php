@@ -32,11 +32,11 @@
 <body class="hold-transition login-page">
   <div class="login-box">
     <div class="login-logo">
-      <a href="<?php echo base_url('admin/dashboard') ?>"><b>System</b>Panel</a>
+      <a href="<?php echo base_url('admin/dashboard') ?>"><b>Admin</b> Panel</a>
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
-      <p class="login-box-msg">Sign in to start your session</p>
+      <p class="login-box-msg">Login to administrations</p>
       <div id="infoMessage"><?php echo $message; ?></div>
       <?php echo form_open("admin/auth/login"); ?>
       <div class="form-group has-feedback">
@@ -58,7 +58,7 @@
         </div>
         <!-- /.col -->
         <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">
+          <button type="submit" class="btn btn-success btn-block btn-flat">
             Sign In
           </button>
         </div>
@@ -66,7 +66,7 @@
       </div>
       <?php echo form_close(); ?>
       <!-- /.social-auth-links -->
-      <a href="forgot_password"><?php echo lang('login_forgot_password'); ?></a>
+      <!-- <a href="forgot_password"><?php echo lang('login_forgot_password'); ?></a> -->
     </div>
     <!-- /.login-box-body -->
   </div>
