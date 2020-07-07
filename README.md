@@ -2,6 +2,7 @@
  web app evoting menggunakan codeigniter versi 03
 
  ### documentation login administrator
- base_url/admin 
- use email : admin@admin.com
- password  : password
+ #### base_url/admin 
+ 
+ #### use email : admin@admin.com
+ #### password  : password
