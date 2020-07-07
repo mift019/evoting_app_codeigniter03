@@ -64,7 +64,7 @@ class Kandidat extends CI_Controller
         if ($row) {
             $data = array(
                 'idkandidat' => $row->idkandidat,
-                'organisasi' => $row->organisasi,
+                // 'organisasi' => $row->organisasi,
                 'nama' => $row->nama,
                 'nourut' => $row->nourut,
                 'visi' => $row->visi,
@@ -97,7 +97,7 @@ class Kandidat extends CI_Controller
             'button' => 'Create',
             'action' => site_url('admin/kandidat/create_action'),
             'idkandidat' => set_value('idkandidat'),
-            'organisasi' => set_value('organisasi'),
+            // 'organisasi' => set_value('organisasi'),
             'nama' => set_value('nama'),
             'nourut' => set_value('nourut'),
             'visi' => set_value('visi'),
@@ -139,7 +139,7 @@ class Kandidat extends CI_Controller
                 $inputFileName = $upload_data['full_path'];
 
                 $data = array(
-                    'organisasi' => $this->input->post('organisasi', TRUE),
+                    // 'organisasi' => $this->input->post('organisasi', TRUE),
                     'nama' => $this->input->post('nama', TRUE),
                     'nourut' => $this->input->post('nourut', TRUE),
                     'visi' => $this->input->post('visi', TRUE),
@@ -178,7 +178,7 @@ class Kandidat extends CI_Controller
                 'button' => 'Update',
                 'action' => site_url('admin/kandidat/update_action'),
                 'idkandidat' => set_value('idkandidat', $row->idkandidat),
-                'organisasi' => set_value('organisasi', $row->organisasi),
+                // 'organisasi' => set_value('organisasi', $row->organisasi),
                 'nama' => set_value('nama', $row->nama),
                 'nourut' => set_value('nourut', $row->nourut),
                 'visi' => set_value('visi', $row->visi),
@@ -248,7 +248,7 @@ class Kandidat extends CI_Controller
                 redirect('admin/kandidat', 'refresh');
             } else {
                 $data = array(
-                    'organisasi' => $this->input->post('organisasi', TRUE),
+                    // 'organisasi' => $this->input->post('organisasi', TRUE),
                     'nama' => $this->input->post('nama', TRUE),
                     'nourut' => $this->input->post('nourut', TRUE),
                     'jumlahsuara' => $this->input->post('jumlahsuara', TRUE),

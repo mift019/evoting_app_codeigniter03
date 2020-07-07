@@ -56,7 +56,7 @@
                                             <th>Nama</th>
                                             <th>Nourut</th>
                                             <th>Suara</th>
-                                            <th>Organisasi</th>
+                                            <!-- <th>Organisasi</th> -->
                                             <th>Visi</th>
                                             <th>Misi</th>
                                             <th>Foto</th>
@@ -71,13 +71,13 @@
                                                 <td><?php echo htmlspecialchars($kandidat->nama, ENT_QUOTES, 'UTF-8'); ?></td>
                                                 <td><?php echo htmlspecialchars($kandidat->nourut, ENT_QUOTES, 'UTF-8'); ?></td>
                                                 <td><?php echo htmlspecialchars($kandidat->jumlahsuara, ENT_QUOTES, 'UTF-8'); ?></td>
-                                                <td><?php echo htmlspecialchars($kandidat->organisasi, ENT_QUOTES, 'UTF-8'); ?></td>
+                                                <!-- <td><?php echo htmlspecialchars($kandidat->organisasi, ENT_QUOTES, 'UTF-8'); ?></td> -->
                                                 <td><?php echo $kandidat->visi ?></td>
                                                 <td><?php echo $kandidat->misi ?></td>
                                                 <td><img height="50px" src="<?php echo base_url('assets/uploads/kandidat/' . $kandidat->foto) ?>"></td>
                                                 <td class="text-center"><?php echo ($kandidat->status) ? anchor("admin/kandidat/deactivate/" . $kandidat->idkandidat, 'Active', 'class="label label-info"') : anchor("admin/kandidat/activate/" . $kandidat->idkandidat, 'Inactive', 'class="label label-info"'); ?></td>
                                                 <td class="text-center">
-                                                    <a href="<?php echo base_url('admin/kandidat/read/' . $kandidat->idkandidat) ?>" class="btn btn-sm btn-flat btn-info"><i class="fa fa-search"></i></a>
+                                                    <a href="<?php echo base_url('admin/kandidat/read/' . $kandidat->idkandidat) ?>" class="btn btn-sm btn-flat btn-success"><i class="fa fa-eye"></i></a>
                                                     <a href="<?php echo base_url('admin/kandidat/edit/' . $kandidat->idkandidat) ?>" class="btn btn-sm btn-flat bg-orange"><i class="fa fa-edit"></i></a>
                                                     <button type="button" class="btn btn-sm btn-flat btn-danger" data-whatever="<?php echo base_url('admin/kandidat/delete/' . $kandidat->idkandidat) ?>" data-toggle="modal" data-target="#modal-danger"><i class="fa fa-trash"></i></button>
                                                 </td>

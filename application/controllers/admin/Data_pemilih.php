@@ -115,7 +115,7 @@ class Data_pemilih extends CI_Controller
             'jk' => set_value('jk'),
             'status' => set_value('status'),
             'aktif' => set_value('aktif'),
-            'dd_kelas' => $this->Data_pemilih_model->kelasDropdown(),
+            // 'dd_kelas' => $this->Data_pemilih_model->kelasDropdown(),
             'kelas_selected' => $this->input->post('kelas') ? $this->input->post('kelas') : '', // untuk edit ganti '' menjadi data dari database misalnya $row->kelas
         );
         $this->load->view('back/data_pemilih/data_pemilih_form', $data);
@@ -133,7 +133,7 @@ class Data_pemilih extends CI_Controller
         if ($this->form_validation->run() == FALSE) {
             $this->create();
         } else {
-            $getKelas = $this->Data_pemilih_model->getKelas($this->input->post('kelas'));
+            // $getKelas = $this->Data_pemilih_model->getKelas($this->input->post('kelas'));
 
             $nis = $this->input->post('nis', TRUE);
             $username = $this->input->post('username', TRUE);

@@ -35,7 +35,7 @@
                                 <label for="varchar">No Urut <?php echo form_error('nourut') ?></label>
                                 <input type="text" class="form-control" name="nourut" id="nourut" placeholder="No urut" value="<?php echo $nourut; ?>" />
                             </div>
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label for="varchar">Organisasi <?php echo form_error('organisasi') ?></label>
                                 <div class="form-group">
                                     <input name="organisasi" id="organisasi" type="radio" class="form-control square-blue" <?php if ($organisasi == 'OSIS') echo "checked"; ?> value="OSIS" />
@@ -44,7 +44,7 @@
                                     <input name="organisasi" id="organisasi" type="radio" class="form-control square-blue" <?php if ($organisasi == 'MPK') echo 'checked'; ?> value="MPK" />
                                     <label for="organisasi">MPK</label>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="form-group">
                                 <label for="visi">Visi <?php echo form_error('visi') ?></label>
                                 <textarea class="form-control textarea" name="visi" id="visi" placeholder="Visi"><?php echo $visi; ?></textarea>
