@@ -66,7 +66,7 @@ class Data_pemilih extends CI_Controller
         }
 
         $row = $this->Data_pemilih_model->get_by_id($id);
-        $getKelas = $this->Data_pemilih_model->getKelas_by_idkelas($id);
+        // $getKelas = $this->Data_pemilih_model->getKelas_by_idkelas($id);
 
         if ($row) {
             $data = array(
@@ -199,8 +199,9 @@ class Data_pemilih extends CI_Controller
                 'jk' => set_value('jk', $row->jk),
                 'status' => set_value('status', $row->status),
                 'aktif' => set_value('aktif', $row->aktif),
-                'dd_kelas' => $this->Data_pemilih_model->kelasDropdown(),
-                'kelas_selected' => $this->input->post('kelas') ? $this->input->post('kelas') : $row->idkelas, // untuk edit ganti '' menjadi data dari database misalnya $row->kelas    
+                // 'dd_kelas' => $this->Data_pemilih_model->kelasDropdown(),
+                // 'kelas_selected' => $this->input->post('kelas') ? $this->input->post('kelas') : $row->idkelas, 
+                // untuk edit ganti '' menjadi data dari database misalnya $row->kelas    
             );
             $this->load->view('back/data_pemilih/data_pemilih_form', $data);
         } else {
@@ -580,7 +581,7 @@ class Data_pemilih extends CI_Controller
         if ($this->form_validation->run() == FALSE) {
             $this->update($this->input->post('id', TRUE));
         } else {
-            $getKelas = $this->Data_pemilih_model->getKelas($this->input->post('kelas'));
+            // $getKelas = $this->Data_pemilih_model->getKelas($this->input->post('kelas'));
 
             $data = array(
                 'nis' => $this->input->post('nis', TRUE),

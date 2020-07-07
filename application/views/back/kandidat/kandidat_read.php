@@ -27,10 +27,10 @@
                                         <td><strong>Nama Lengkap</strong></td>
                                         <td><?php print_r($nama); ?></td>
                                     </tr>
-                                    <tr>
+                                    <!-- <tr>
                                         <td><strong>Organisasi</strong></td>
                                         <td><?php print_r($organisasi); ?></td>
-                                    </tr>
+                                    </tr> -->
                                     <tr>
                                         <td><strong>Suara</strong></td>
                                         <td><?php print_r($jumlahsuara); ?></td>

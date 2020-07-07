@@ -388,6 +388,7 @@ class Kandidat extends CI_Controller
         $allowed_mime_type_arr = array(
             'image/gif',
             'image/jpeg',
+            'image/jpg',
             'image/pjpeg',
             'image/png',
             'image/x-png'
